@@ -18,7 +18,6 @@ var articles = {
         <p>
             This is the content of my first artcle.This is the content of my first artcle.This is the content of my first artcle.This is the content of my first artcle.This is the content of my first artcle.This is the content of my first artcle.This is the content of my first artcle.
         </p>`
-        
     },
     'article-Two':{
         title: 'Article Two | Shweta Sharma',
@@ -42,7 +41,7 @@ var articles = {
         
 
 function createTemplate (data) {
-    var title = data.title;
+    //var title = data.title;
     var date = data.date;
     var heading = data.heading;
     var content=data.content;
