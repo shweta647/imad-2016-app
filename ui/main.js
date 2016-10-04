@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var element = document.getElementById('main-text');
-element.innerHTML='JAVA | Python | Ruby on Rails';
+element.innerHTML='Enter your trade and see what is available';
 
 
 //move the image
