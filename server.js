@@ -29,7 +29,6 @@ var articles = {
             This is the content of my second artcle. 
         </p> `
     },
-        
     'article-Three':{
     title: 'Article Three | Shweta Sharma',
         heading: 'Article Three',
