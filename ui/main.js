@@ -22,7 +22,9 @@ var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     //make a req to server and send the name
     //capture  list of names and render it as a list
-    var names = ['JAVA', 'Python', 'Ruby on Rails'];
+    //var names = ['JAVA', 'Python', 'Ruby on Rails'];
+    var names= request.responseText;
+    names = JSON.parse(names);
     var list = '';
     for (var i=0; i<names.length; i++) {
         list+= '<li>' + names[i]+ '</li>';
