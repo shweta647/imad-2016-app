@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var element = document.getElementById('main-text');
-element.innerHTML='JAVA | Python | Ruby on Rails |';
+element.innerHTML='JAVA | Python | Ruby on Rails';
 
 
 //move the image
