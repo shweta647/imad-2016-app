@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var element = document.getElementById('main-text');
-element.innerHTML='University of Michigan | Stanford | Indian School of Business | Princeton University';
+element.innerHTML='JAVA | Python | Ruby on Rails |';
 
 
 //move the image
