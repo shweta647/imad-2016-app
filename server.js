@@ -22,7 +22,7 @@ var articles = {
     },
     'article-Two':{
         title: 'Article Two | Shweta Sharma',
-        heading: 'Article One',
+        heading: 'Article Two',
         date: 'Sep 25, 2016',
         content: `
         <p>
