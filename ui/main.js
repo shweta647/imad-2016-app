@@ -15,6 +15,7 @@ img.onclick = function () {
     img.style.marginLeft = '100px';
 };
 
+
 //submit name
 
 var submit = document.getElementById('submit_btn');
