@@ -15,7 +15,23 @@ img.onclick = function () {
     img.style.marginLeft = '100px';
 };
 
-
+//counter code
+var button = document.getElementByID('counter');
+var counter=0;
+button.onclick=function () {
+    
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
+                var counter = requset.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
+            }
+        }
+    };
+    
+}
 //submit name
 
 var submit = document.getElementById('submit_btn');
