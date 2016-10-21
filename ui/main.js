@@ -1,4 +1,4 @@
-console.log('Loaded!');
+/* console.log('Loaded!');
 var element = document.getElementById('main-text');
 element.innerHTML='Enter your trade and see what is available';
 
@@ -13,7 +13,7 @@ function moveRight () {
 img.onclick = function () {
     var interval = setInterval(moveRight,50);
     img.style.marginLeft = '100px';
-};
+}; */
 
 //counter code
 var button = document.getElementByID('counter');
