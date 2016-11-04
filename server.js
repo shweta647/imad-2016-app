@@ -73,7 +73,7 @@ function createTemplate (data) {
                     ${heading}
                 </h3>
                 <div>
-                    ${date}
+                    ${date.toDateString()}
                 </div>
                 <div>
                 ${content}
@@ -123,7 +123,8 @@ app.get('/submit-name', function (req, res) {
 
 app.get('/articles/:articleName', function (req,res) {
     
-    pool.query("SELECT * FROM article WHERE title=" +req.params.articleName, function (err, result) {
+    //SELECT * FROM article WHERE title= 'article-one'
+    pool.query("SELECT * FROM article WHERE title='" +req.params.articleName+ "'", function (err, result) {
        if (err) {
            re.status(500).send(err.toString());
        } else {
