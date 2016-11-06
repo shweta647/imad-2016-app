@@ -61,11 +61,12 @@ app.get('/', function (req, res) {
 
 function hash (input) {
     //How do we create a hash?
-    var hashed = crypto.pbkdf2Sync(input, salt);
+    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
+    return hashed.toString('hex');
 }
 
 app.get('hash/:input',function(req,res) {
-    var hashedString = hash(req.params.input)
+    var hashedString = hash(req.params.input, 'this-is-some-random-string');
     res.send(hashedString);
     
 });
