@@ -16,7 +16,7 @@ img.onclick = function () {
 }; */
 
 //counter code
-var button = document.getElementById('counter');
+/*var button = document.getElementById('counter');
 var counter=0;
 button.onclick=function () {
     
@@ -33,9 +33,9 @@ button.onclick=function () {
     //make the request
     request.open('GET', 'http://shweta647.imad.hasura-app.io/counter', true);
     request.send(null);
-};
+}; */
 
-//submit name
+//submit username/password to login
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     // make a request to the server and send the name
